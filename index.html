@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithms</title>
+  </head>
+
+  <body>
+    <!-- <div id="root">
+    <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+    <form class="userDetails" onSubmit="welcome()">
+      user name: <input class="user-name" type="text"><br>
+      pass word: <input class="pass-word" type="text"><br><br>
+      <button type="submit" class="btn-submit"> Submit</button>
+    </form>
+  </div> -->
+
+    <button>click</button>
+
+    <script>
+      const counter = {
+        cnt: 0,
+        inc: function () {
+          cnt++;
+          console.log("cnt", cnt);
+        },
+      };
+      const button = document.getElementsByTagName("button")[0];
+      button.addEventListener("click", counter.inc(), false);
+    </script>
+  </body>
+</html>

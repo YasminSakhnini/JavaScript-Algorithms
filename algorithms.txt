@@ -1,0 +1,85 @@
+Programmeringsövningar
+https://goo.gl/ifcKLm
+
+Nedan kommer ett antal olika övningar, dessa kommer bestå av olika svårighetsgrader, mestadels Lätta och Medel, Svåra kan också förekomma.
+Alla övningar bör ta er 0-10 minuter att utföra, svåra övningar kan ta upp emot 30min inkl. Research.
+Konstiga <> tecken
+Om övningen säger <something> så betyder det att something (inklusive <>) skall bytas ut till variabeln something.
+Ledtrådar
+En del övningar kommer ha Ledtrådar/Tips, dessa skrivs i slutet av övningens beskrivning i VIT TEXT, för att se dem måste ni markera texten.
+Övrigt
+En del kommer innehålla specifika delar från t.ex JavaScript, ifall ni använder andra språk kan ni googla fram eller fråga om dess motsvarigheter.
+Ni rekommenderas utföra följande övningar i ett tomt projekt, använd unika namn på funktioner alternativt kommentera ut eller ta bort avklarade övningar för att slippa problem.
+Instruktioner
+Strukturen för dessa kommer om oftast följa stegen nedan.
+1)   Skriv en funktion som gör….
+2a) När man kallar på funktionen så skall resultatet vara……
+2b) När koden körs skall följande hända….
+
+Övningar
+[Lätt] Logga: Hello world! Använd funktionen console.log
+
+
+[Lätt] Funktionen skall ta emot 1 argument “name”
+Den skall logga: Hello <name>!
+
+
+[Medel] Gör en funktion som frågar användaren efter dess namn mha. den inbyggda funktionen prompt, spara svaret i variabeln “name” och logga sedan: Hello <name>!
+
+
+[Medel] Fortsätt på funktionen ovan och gör så att om användaren inte anger ett svar eller trycker “Avbryt” i prompten så loggar ni ej ut en hälsning utan istället loggas det: Goodbye.
+
+
+[Lätt] Logga 10 tal, börja på 0, sista loggen ska bli 9, använd for-loop och variabeln i.
+[Lätt] Logga 11 tal, börja på 5, sista loggen ska bli 15, samma som övningen ovan men justera hur i:et  hanteras på kodraden for(let i =.....
+
+
+[Lätt] Logga 10 tal, börja på 10, sista loggen ska bli 1, efter varje siffra skall det vara 3 punkter. for-loopar måste inte börja på 0, gå till < 10 och ha i++, de kan ha motsatsen på alla 3 delar.
+
+
+[Lätt] Logga 1...2...3...4...5...6...7...8...9...10… som en enda sträng och använd en for-loop,  bygg ihop resultatet i en sträng-variabel med +=.
+
+
+[Lätt] Ta emot 1 argument aNumber som returnerar true ifall aNumber är jämn och false ifall den är udda, koden skall inte innehålla if-satser, använd gärna modulus-operatorn.
+
+
+[Mellan] Logga strängen 1.2...3.4...5.6...7.8...9.10… med en for-loop, återanvänd jämn/udda funktionen ovan.
+
+
+[Lätt] Med strängen “hej på dig” skall du hitta och logga vilket index “dig” börjar på. Förväntat svar: 7
+
+
+[Lätt] Ta emot 1 argument aLetter som returnerar true ifall tecknet som skickas in är med i alfabetet. Funktionen skall acceptera både små och stora bokstäver.
+Förväntat svar “m” -> true. “#” -> false. “K” -> true, använd gärna toLowerCase() och en sträng-variabel som håller alla bokstäver i alfabetet.
+
+
+[Mellan] Ta emot 1 argument aString som returnerar true ifall strängen endast innehåller tecken från alfabetet.
+Förväntat svar “mySecretPassword64” -> false. “hej då” -> false. “Hejdå” -> true, ni kan loopa genom varje bokstav i en sträng som om det vore en array (både length och [] funkar).
+[Mellan] Gör en funktion som klarar båda de 2 övningarna ovan med hjälp av RegExp, (Obs. den ska kunna hantera det svenska alfabetet).
+
+RegExp-tips: https://regex101.com/
+JS-kodalternativ 1: aString.search(/your-regexp-here/) // returns index
+JS-kodalternativ 2: /your-regexp-here/.test(aString)      // returns bool (true if match found)
+
+
+[Mellan] Ta emot 1 argument anEmail som returnerar true eller false ifall strängen är en giltig e-mail adress.
+Krav: 
+- ett @, 
+- minst 2 bokstäver efter sista punkten
+- minst 2 tecken mellan @ och punkten
+- minst 2 tecken före @
+- Ingen RegExp får användas, använd minst en for-loop
+
+
+[Lätt-Mellan] Gör samma funktion som ovan fast denna gång utan loop med RegExp.
+
+
+[Mellan] Gör samma funktion som ovan fast denna gång utan RegExp och loop(ar). ni kan räkna ut antal bokstäver mellan andra med indexOf & lite subtraktion.
+[Lätt] Ta emot 2 argument weight, length. Räkna ut BMI-värdet baserat på dessa kilogram och centimeter och returnera svaret.
+Förklaring: https://en.wikipedia.org/wiki/Body_mass_index
+
+
+[Mellan] Bygg vidare på föregående funktion genom att ta emot input vikt/längd från användaren (prompt), logga sedan ett olikt (sträng) meddelande baserat på under/normal/över -viktighet för de angivna värdena
+
+
+...
